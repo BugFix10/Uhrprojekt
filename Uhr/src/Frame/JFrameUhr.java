@@ -7,6 +7,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+
+import Uhr.Starten;
+import Uhr.Stoppen;
+
 import javax.swing.JButton;
 
 public class JFrameUhr extends JFrame {
@@ -90,6 +94,7 @@ public class JFrameUhr extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				startButton.setText("Go!");
 				stoppButton.setText("STOPP");
+				Starten.start(); 
 			}
 		});
 
@@ -102,6 +107,7 @@ public class JFrameUhr extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				stoppButton.setText("finish!");
 				startButton.setText("START"); 
+				Stoppen.stopp();
 			}
 		});
 	}
