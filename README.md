@@ -1,2 +1,0 @@
-# Uhrprojekt
-Semestergruppenarbeit
